@@ -12,7 +12,8 @@
   },
   "keywords": [
     "markdown",
-    "text",
+    "markdown-it",
+    "markdown-it-plugin",
     "color"
   ],
   "author": "yusu79",
