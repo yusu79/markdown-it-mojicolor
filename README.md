@@ -1,18 +1,20 @@
 # markdown-it-mojicolor
+![GitHub](https://img.shields.io/github/license/yusu79/markdown-it-mojicolor)
+
 The [markdown-it](https://l.pg1x.com/G6nd) plugin that allows you to change the text color of Markdown.
 
-## 目次(TOC)
-- [設定方法(Setup)](#setup)
-- [簡単な使い方(Quick usage)](#quick-usage)
-- [詳細(Not so quick usage)](#not-so-quick-usage)
-- [オプション(Options)](#options)
+## TOC
+1. [Setup](#setup)
+2. [Quick usage](#quick-usage)
+3. [Not so quick usage](#not-so-quick-usage)
+4. [Options](#options)
 
-## <a id="setup">設定方法(Setup)</a>
-
-
-## <a id="quick-usage">簡単な使い方(Quick usage)</a>
-
-## <a id="not-so-quick-usage">詳細(Not so quick usage)</a>
+## <a id="setup">Setup</a>
 
 
-## <a id="options">オプション(Options)</a>
+## <a id="quick-usage">Quick usage</a>
+
+## <a id="not-so-quick-usage">Not so quick usage</a>
+
+
+## <a id="options">Options</a>
