@@ -3,20 +3,51 @@
 
 The [markdown-it](https://l.pg1x.com/G6nd) plugin that allows you to change the text color of Markdown.
 
+<!-- omit in toc -->
 ## TOC
-- [markdown-it-mojicolor](#markdown-it-mojicolor)
-  - [TOC](#toc)
-  - [Setup](#setup)
-  - [Quick usage](#quick-usage)
-  - [Not so quick usage](#not-so-quick-usage)
-  - [Options](#options)
+- [Setup](#setup)
+- [Quick usage](#quick-usage)
+- [Usage](#usage)
 
-## <a id="setup">Setup</a>
+## Setup
+Install via npm:
+
+```bash
+npm install markdown-it-mojicolor
+```
+
+Use with markdown-it:
+
+```js
+const 
+    md = require('markdown-it')(),
+    plugin = require("markdown-it-mojicolor");
+
+md.use(plugin);
+```
+
+## Quick usage
+Works:
+| Input               | Render                                | 
+| ------------------- | ------------------------------------- | 
+| `%Tomato%{tomato}`  | `<font color="tomato">Tomato</font>`  | 
+| `%Orange%{#ffa500}` | `<font color="#ffa500">Orange</font>` | 
+
+Doesn't work:
+| Input                      | Render                                       | Description                  | 
+| -------------------------- | -------------------------------------------- | ---------------------------- | 
+| `%Aqua%{rgb(0,255,255)}`   | `<font color="rgb(0,255,255)">Aqua</font>`   | `<font>` does not support RGB. | 
+| `%Bisque%{hsb(33,23,100)}` | `<font color="hsb(33,23,100)">Bisque</font>` | `<font>` does not support HSB. | 
 
 
-## <a id="quick-usage">Quick usage</a>
+## Usage
+A markdown-it plugin that converts `%character%{color}` to `<font color="color">character</font>`.
 
-## <a id="not-so-quick-usage">Not so quick usage</a>
+Note that it only converts to `<font>`, so RGB and HSL cannot be used.
+
+Colors should be specified as `color word` or  `hexadecimal`.
 
 
-## <a id="options">Options</a>
+
+
+
