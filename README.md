@@ -1,5 +1,8 @@
 # markdown-it-mojicolor
 ![GitHub](https://img.shields.io/github/license/yusu79/markdown-it-mojicolor)
+![npm](https://img.shields.io/npm/dw/markdown-it-mojicolor)
+
+
 
 The [markdown-it](https://l.pg1x.com/G6nd) plugin that allows you to change the text color of Markdown.
 
