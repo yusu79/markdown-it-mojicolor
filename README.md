@@ -11,6 +11,7 @@ The [markdown-it](https://l.pg1x.com/G6nd) plugin that allows you to change the 
 - [Setup](#setup)
 - [Quick usage](#quick-usage)
 - [Usage](#usage)
+- [Extensions](#extensions)
 
 ## Setup
 Install via npm:
@@ -51,6 +52,7 @@ Note that it only converts to `<font>`, so RGB and HSL cannot be used.
 Colors should be specified as `color word` or  `hexadecimal`.
 
 
-
+## Extensions
+- [yusu79/vscode-markdown-mojicolor](https://l.pg1x.com/spq1)
 
 
