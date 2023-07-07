@@ -11,7 +11,7 @@ The [markdown-it](https://l.pg1x.com/G6nd) plugin that allows you to change the 
 - [Setup](#setup)
 - [Quick usage](#quick-usage)
 - [Usage](#usage)
-- [Reference Site](#reference-site)
+- [Reference Website](#reference-website)
 - [Extensions](#extensions)
 
 ## Setup
@@ -55,7 +55,7 @@ To find out which colors are supported, refer to [Traditional Colors of Japan - 
 
 
 
-## Reference Site
+## Reference Website
 - [Traditional Colors of Japan - Traditional Colors of Japan](https://l.pg1x.com/X3e4)
 - [Traditional Colors of World](https://l.pg1x.com/eT5p)
 - [Symbol Colors of Subway Metro Colors - Metro Colors](https://l.pg1x.com/kCcm)
