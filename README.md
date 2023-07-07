@@ -32,29 +32,24 @@ md.use(plugin);
 ```
 
 ## Quick usage
-Works:
-| Input                        | Render                                      | Description                                      | 
-| ---------------------------- | ------------------------------------------- | ------------------------------------------------ | 
-| `%Tomato%{tomato}`           | `<font color="tomato">Tomato</font>`        | Specified by color.                              | 
-| `%Orange%{#ffa500}`          | `<font color="#ffa500">Orange</font>`       | Specified in hexadecimal.                        | 
-| `%café au lait%{カフェオレ}` | `<font color="#946c45">café au lait</font>` | Specified in Japanese, converted to hexadecimal. | 
-
-Doesn't work:
-| Input                      | Render                                       | Description                  | 
-| -------------------------- | -------------------------------------------- | ---------------------------- | 
-| `%Aqua%{rgb(0,255,255)}`   | `<font color="rgb(0,255,255)">Aqua</font>`   | `<font>` does not support RGB. | 
-| `%Bisque%{hsb(33,23,100)}` | `<font color="hsb(33,23,100)">Bisque</font>` | `<font>` does not support HSB. | 
+| Input                        | Render                                                 | Description                                      | 
+| ---------------------------- | ------------------------------------------------------ | ------------------------------------------------ | 
+| `%Tomato%{tomato}`           | `<span style="color: tomato;">Tomato</span>`           | Specified by color.                              | 
+| `%Orange%{#ffa500}`          | `<span style="color: #ffa500;">Orange</span>`          | Specified in hexadecimal.                        | 
+| `%café au lait%{カフェオレ}` | `<span style="color: #946c45;">café au lait</span>`    | Specified in Japanese, converted to hexadecimal. | 
+| `%Aqua%{rgb(0,255,255)}`     | `<span style="color: rgb(0,255,255);">Aqua</span>`     | Specified in RGB.                                | 
+| `%Bisque%{hsl(33,100%,88%)}` | `<span style="color: hsl(33,100%,88%);">Bisque</span>` | Specified in HSL.                                | 
 
 
 ## Usage
-A markdown-it plugin that converts `%character%{color}` to `<font color="color">character</font>`.
+A markdown-it plugin that converts `%character%{color}` to `<span style="color: color">character</span>`.
 
-Note that it only converts to `<font>`, so RGB and HSL cannot be used.
 
-Colors should be specified as `color word` or  `hexadecimal`.
+Colors should be specified as `color word`, `hexadecimal`, `RGB` or `HSL`.
+
 
 It also supports Japanese.
-For example, if you specify "カフェオレ" meaning "café au lait", it will be converted to "#946c45", which closely resembles the color of café au lait.
+For example, if you specify `カフェオレ` meaning `café au lait`, it will be converted to `#946c45`, which closely resembles the color of café au lait.
 
 To find out which colors are supported, refer to [Traditional Colors of Japan - Dictionary of Japanese Colors](https://l.pg1x.com/X3e4).
 
