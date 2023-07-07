@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/yusu79/markdown-it-mojicolor/issues"
   },
-  "homepage": "https://github.com/yusu79/markdown-it-mojicolor#readme"
+  "homepage": "https://github.com/yusu79/markdown-it-mojicolor#readme",
+  "sponsor": {
+    "url": "https://github.com/sponsors/yusu79"
+  }
 }
