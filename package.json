@@ -16,7 +16,11 @@
     "markdown-it-plugin",
     "color"
   ],
-  "author": "yusu79",
+  "author": {
+    "name": "yusu79",
+    "email": "yusu79oss@gmail.com",
+    "url": "https://github.com/yusu79"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yusu79/markdown-it-mojicolor/issues"

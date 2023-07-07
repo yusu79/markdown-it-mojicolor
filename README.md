@@ -11,6 +11,7 @@ The [markdown-it](https://l.pg1x.com/G6nd) plugin that allows you to change the 
 - [Setup](#setup)
 - [Quick usage](#quick-usage)
 - [Usage](#usage)
+- [Reference Site](#reference-site)
 - [Extensions](#extensions)
 
 ## Setup
@@ -32,10 +33,11 @@ md.use(plugin);
 
 ## Quick usage
 Works:
-| Input               | Render                                | 
-| ------------------- | ------------------------------------- | 
-| `%Tomato%{tomato}`  | `<font color="tomato">Tomato</font>`  | 
-| `%Orange%{#ffa500}` | `<font color="#ffa500">Orange</font>` | 
+| Input                        | Render                                      | Description                                      | 
+| ---------------------------- | ------------------------------------------- | ------------------------------------------------ | 
+| `%Tomato%{tomato}`           | `<font color="tomato">Tomato</font>`        | Specified by color.                              | 
+| `%Orange%{#ffa500}`          | `<font color="#ffa500">Orange</font>`       | Specified in hexadecimal.                        | 
+| `%café au lait%{カフェオレ}` | `<font color="#946c45">café au lait</font>` | Specified in Japanese, converted to hexadecimal. | 
 
 Doesn't work:
 | Input                      | Render                                       | Description                  | 
@@ -50,6 +52,22 @@ A markdown-it plugin that converts `%character%{color}` to `<font color="color">
 Note that it only converts to `<font>`, so RGB and HSL cannot be used.
 
 Colors should be specified as `color word` or  `hexadecimal`.
+
+It also supports Japanese.
+For example, if you specify "カフェオレ" meaning "café au lait", it will be converted to "#946c45", which closely resembles the color of café au lait.
+
+To find out which colors are supported, refer to [Traditional Colors of Japan - Dictionary of Japanese Colors](https://l.pg1x.com/X3e4).
+
+
+
+## Reference Site
+- [Traditional Colors of Japan - Traditional Colors of Japan](https://l.pg1x.com/X3e4)
+- [Traditional Colors of World](https://l.pg1x.com/eT5p)
+- [Symbol Colors of Subway Metro Colors - Metro Colors](https://l.pg1x.com/kCcm)
+- [Rail Colors](https://l.pg1x.com/iyJ7)
+
+The original site (https://www.colordic.org/) has granted us permission to publish and use the site on OSS.
+
 
 
 ## Extensions
