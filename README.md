@@ -1,5 +1,6 @@
 # markdown-it-mojicolor
 ![GitHub](https://img.shields.io/github/license/yusu79/markdown-it-mojicolor)
+![npm](https://img.shields.io/npm/v/markdown-it-mojicolor)
 ![npm](https://img.shields.io/npm/dw/markdown-it-mojicolor)
 
 
