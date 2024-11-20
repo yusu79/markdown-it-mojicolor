@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-mojicolor",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "The markdown-it plugin that allows you to change the text color of Markdown.",
   "main": "index.js",
   "scripts": {
